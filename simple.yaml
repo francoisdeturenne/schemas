@@ -1,0 +1,24 @@
+apiVersion: inv.sdcio.dev/v1alpha1
+kind: Schema
+metadata:
+  name: simple.orange.dev-1.0.0
+  namespace: default
+spec:
+  repoURL: https://gitlab.tech.orange/oln/ones/nokia_orchestration/sdcio/schemas
+  provider: simple.orange.dev
+  version: 1.0.0
+  kind: tag
+  ref: v1.0.0
+  credentials: repo-access-token-s
+  dirs:
+    - src: simple-yang-models
+      dst: .
+  schema:
+    models:
+      - simple_orange/models
+    #includes:
+    #  - ietf
+    #  - openconfig/extensions
+    #  - openconfig/openconfig-extensions.yang
+    excludes:
+      - .*tools.*
