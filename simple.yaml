@@ -4,12 +4,11 @@ metadata:
   name: simple.orange.dev-1.0.0
   namespace: default
 spec:
-  repoURL: https://gitlab.tech.orange/oln/ones/nokia_orchestration/sdcio/schemas
+  repoURL: https://github.com/francoisdeturenne/schemas.git
   provider: simple.orange.dev
   version: 1.0.0
   kind: tag
   ref: v1.0.0
-  credentials: repo-access-token-s
   dirs:
     - src: simple-yang-models
       dst: .
